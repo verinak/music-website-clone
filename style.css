@@ -1,3 +1,4 @@
+/* custom lavender color */
 :root {
     --lavender-accent: #d0ccff;
 }
@@ -10,6 +11,118 @@
     background-color: var(--lavender-accent);
 }
 
+/* custom font classes */
+.montserrat-100 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.montserrat-200 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.montserrat-300 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-500 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.montserrat-600 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.montserrat-700 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-800 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.montserrat-900 {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* apply font to all body content */
+body {
+    font-family:
+        "Montserrat",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .btn.btn-custom {
     background-color: #6261613d;
     border: none;
@@ -20,4 +133,27 @@
     background-color: #28282850;
 }
 
-/* todo : font sizes , spaces ,  */
+.hero-title {
+    /* min, default, max */
+    /* font-size: clamp(10vw, 6rem, 14vw); */
+    font-size: clamp(3rem, 18vw, 6rem);
+    line-height: 1.2;
+}
+
+.section-title {
+    /* font-size: clamp(2.2rem, 5vw, 3rem); */
+    font-size: clamp(3vw, 3rem, 8vw);
+}
+
+.form-note {
+    font-size: 0.7rem;
+}
+
+/* prevent footer text overflow on extra small screens */
+@media screen and (max-width: 576px) {
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* todo : font sizes , spaces (padding margin) , buttons (anchor tags?) , form is a mess actually*/
