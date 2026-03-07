@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flux Sound Studio</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="w-100 min-vh-100 d-flex flex-column">
+            <!-- ------------------- HEADER ------------------- -->
+            <!-- ana 3arfa enaha m4 sticky fl template bs keda a7la -->
+            <header class="bg-dark text-light w-100 sticky-top">
+                <div
+                    class="container d-flex justify-content-center align-items-center px-3 py-4"
+                >
+                    <!-- logo -->
+                    <div class="me-2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="22"
+                            viewBox="0 0 512 512"
+                            fill="currentColor"
+                            xml:space="preserve"
+                        >
+                            <path
+                                d="M256 0C114.836 0 0 114.841 0 256s114.836 256 256 256 256-114.841 256-256S397.163 0 256 0m0 492.308c-130.298 0-236.308-106.01-236.308-236.308S125.702 19.692 256 19.692 492.308 125.702 492.308 256 386.298 492.308 256 492.308"
+                            />
+                            <path
+                                d="M256 49.231C141.99 49.231 49.231 141.986 49.231 256S141.991 462.769 256 462.769 462.769 370.015 462.769 256c0-114.014-92.759-206.769-206.769-206.769m0 393.846c-103.154 0-187.077-83.923-187.077-187.077S152.846 68.923 256 68.923 443.077 152.846 443.077 256 359.154 443.077 256 443.077"
+                            />
+                            <path
+                                d="M256 98.462c-86.865 0-157.538 70.673-157.538 157.538 0 86.867 70.673 157.538 157.538 157.538S413.538 342.866 413.538 256c0-86.865-70.673-157.538-157.538-157.538m0 295.384c-76.01 0-137.846-61.836-137.846-137.846S179.991 118.154 256 118.154 393.846 179.99 393.846 256 332.01 393.846 256 393.846"
+                            />
+                            <path
+                                d="M256 147.692c-59.721 0-108.308 48.588-108.308 108.308S196.278 364.308 256 364.308c59.721 0 108.308-48.586 108.308-108.308 0-59.72-48.587-108.308-108.308-108.308m0 196.923c-48.865 0-88.615-39.755-88.615-88.615 0-48.861 39.75-88.615 88.615-88.615S344.615 207.14 344.615 256c0 48.861-39.75 88.615-88.615 88.615"
+                            />
+                            <path
+                                d="M256 206.769c-27.144 0-49.231 22.087-49.231 49.231s22.086 49.231 49.231 49.231c27.144 0 49.231-22.086 49.231-49.231 0-27.144-22.087-49.231-49.231-49.231m0 78.769c-16.289 0-29.538-13.249-29.538-29.538 0-16.288 13.25-29.538 29.538-29.538s29.538 13.25 29.538 29.538c0 16.29-13.249 29.538-29.538 29.538"
+                            />
+                        </svg>
+                    </div>
+                    <h1 class="text-uppercase fs-6 fw-normal mb-0">
+                        Flux Sound Studio
+                    </h1>
+                </div>
+            </header>
+
+            <!-- ------------------- MAIN CONTENT ------------------- -->
+            <main class="flex-fill bg-dark w-100 h-100">
+                <!-- SECTION 1 - HERO -->
+                <section
+                    class="w-100 bg-dark text-light position-relative overflow-hidden"
+                >
+                    <!-- background image -->
+                    <!-- <img
+                        class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                        src="./assets/pexels-nadezhda-moryak-6063606.jpg"
+                    /> -->
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                    >
+                        <source
+                            src="./assets/music-production-studio.mp4"
+                            type="video/mp4"
+                        />
+                        <!-- Your browser does not support videos. -->
+                    </video>
+
+                    <!-- overlay content -->
+                    <div class="text-center px-3 py-5 w-100 position-relative">
+                        <p class="display-1 fw-bold text-uppercase pb-3 px-3">
+                            Where Sound Takes Shape
+                        </p>
+                        <button
+                            type="button"
+                            class="btn btn-outline-light rounded-5 px-5"
+                        >
+                            Learn more
+                        </button>
+                    </div>
+                </section>
+
+                <!-- SECTION 2 - ENGINEERD FOR CREATORS -->
+                <section class="bg-dark w-100 text-light px-3 py-5 p-lg-5">
+                    <div class="row align-items-center pb-2">
+                        <h2
+                            class="text-uppercase display-1 pb-1 d-md-none col-12 col-lg-6"
+                        >
+                            Engineered for creators
+                        </h2>
+                        <h2
+                            class="text-uppercase display-5 pb-1 d-none d-md-block col-12 col-lg-6"
+                        >
+                            Engineered for creators
+                        </h2>
+                        <p class="col-12 col-lg-6">
+                            Flux Sound Studio was built for artists, producers,
+                            and creators who demand precision. Our team brings
+                            years of experience in audio engineering and studio
+                            design to create a space where creativity meets
+                            sound.
+                        </p>
+                    </div>
+                    <img class="w-100" src="./assets/recording-studio.jpg" />
+                </section>
+
+                <!-- SECTION 3 - PREMIUM SPACES -->
+                <section class="w-100 bg-dark text-light px-3 py-5 p-lg-5">
+                    <div class="row position-relative overflow-hidden">
+                        <!-- background image -->
+                        <!-- <img
+                            class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                            src="./assets/pexels-anna-pou-8132523_compressed.jpg"
+                        /> -->
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                        >
+                            <source
+                                src="./assets/girl-wearing-headphones.mp4"
+                                type="video/mp4"
+                            />
+                            <!-- Your browser does not support videos. -->
+                        </video>
+                        <!-- overlay content -->
+                        <div class="p-4 position-relative col-12 col-lg-6">
+                            <h2 class="text-uppercase display-1 pb-1 d-md-none">
+                                Premium Spaces, Professional Tools
+                            </h2>
+                            <h2
+                                class="text-uppercase display-5 pb-1 d-none d-md-block"
+                            >
+                                Premium Spaces, Professional Tools
+                            </h2>
+                            <ul class="pb-2">
+                                <li>
+                                    Fully equipped recording and production
+                                    suites
+                                </li>
+                                <li>
+                                    High-end microphones, interfaces, and
+                                    monitoring systems
+                                </li>
+                                <li>
+                                    Sound-treated rooms for vocals, instruments,
+                                    and mixing
+                                </li>
+                            </ul>
+                            <button
+                                type="button"
+                                class="btn btn-outline-light rounded-5 px-4"
+                            >
+                                Book a space
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4 - TRUSTED BY ARTISTS -->
+                <section class="bg-dark w-100 text-light px-3 py-5 p-lg-5">
+                    <h2
+                        class="text-uppercase text-center display-1 pb-1 d-md-none"
+                    >
+                        Trusted by artists and industry professionals
+                    </h2>
+                    <h2
+                        class="text-uppercase text-center display-5 pb-1 d-none d-md-block"
+                    >
+                        Trusted by artists and industry professionals
+                    </h2>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-flex flex-column">
+                            <img
+                                class="w-100 pb-2"
+                                src="./assets/electric-guitar-closeup.jpg"
+                            />
+                            <div
+                                class="flex-grow-1 d-flex flex-column justify-content-between"
+                            >
+                                <p class="">
+                                    Every session at Flux feels like stepping
+                                    into the future of recording. The sound is
+                                    unmatched.
+                                </p>
+                                <p class="text-secondary">
+                                    ZOLA BEKKER, independent artist
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex flex-column">
+                            <img
+                                class="w-100 pb-2"
+                                src="./assets/studio-equipment-closeup.jpg"
+                            />
+                            <div
+                                class="flex-grow-1 d-flex flex-column justify-content-between"
+                            >
+                                <p class="">
+                                    The equipment is top-tier, but it’s the
+                                    precision of the room acoustics that truly
+                                    sets Flux Sound Studio apart. Mixing here
+                                    feels effortless.
+                                </p>
+                                <p class="text-secondary">
+                                    DAKARAI KAYODE, electronic music producer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 5 - FORM -->
+                <section
+                    class="w-100 text-light position-relative overflow-hidden"
+                >
+                    <!-- background image -->
+                    <img
+                        class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                        src="./assets/condenser-mic-setup.jpg"
+                    />
+                    <!-- overlay content -->
+                    <div class="px-3 py-5 w-100 position-relative">
+                        <div class="row px-2">
+                            <!-- logo and text -->
+                            <div
+                                class="position-relative col-12 col-lg-6 pb-2 pb-lg-0 px-lg-3"
+                            >
+                                <div
+                                    class="h-100 d-flex flex-column justify-content-between gap-2"
+                                >
+                                    <div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            height="46"
+                                            viewBox="0 0 512 512"
+                                            fill="currentColor"
+                                            xml:space="preserve"
+                                        >
+                                            <path
+                                                d="M256 0C114.836 0 0 114.841 0 256s114.836 256 256 256 256-114.841 256-256S397.163 0 256 0m0 492.308c-130.298 0-236.308-106.01-236.308-236.308S125.702 19.692 256 19.692 492.308 125.702 492.308 256 386.298 492.308 256 492.308"
+                                            />
+                                            <path
+                                                d="M256 49.231C141.99 49.231 49.231 141.986 49.231 256S141.991 462.769 256 462.769 462.769 370.015 462.769 256c0-114.014-92.759-206.769-206.769-206.769m0 393.846c-103.154 0-187.077-83.923-187.077-187.077S152.846 68.923 256 68.923 443.077 152.846 443.077 256 359.154 443.077 256 443.077"
+                                            />
+                                            <path
+                                                d="M256 98.462c-86.865 0-157.538 70.673-157.538 157.538 0 86.867 70.673 157.538 157.538 157.538S413.538 342.866 413.538 256c0-86.865-70.673-157.538-157.538-157.538m0 295.384c-76.01 0-137.846-61.836-137.846-137.846S179.991 118.154 256 118.154 393.846 179.99 393.846 256 332.01 393.846 256 393.846"
+                                            />
+                                            <path
+                                                d="M256 147.692c-59.721 0-108.308 48.588-108.308 108.308S196.278 364.308 256 364.308c59.721 0 108.308-48.586 108.308-108.308 0-59.72-48.587-108.308-108.308-108.308m0 196.923c-48.865 0-88.615-39.755-88.615-88.615 0-48.861 39.75-88.615 88.615-88.615S344.615 207.14 344.615 256c0 48.861-39.75 88.615-88.615 88.615"
+                                            />
+                                            <path
+                                                d="M256 206.769c-27.144 0-49.231 22.087-49.231 49.231s22.086 49.231 49.231 49.231c27.144 0 49.231-22.086 49.231-49.231 0-27.144-22.087-49.231-49.231-49.231m0 78.769c-16.289 0-29.538-13.249-29.538-29.538 0-16.288 13.25-29.538 29.538-29.538s29.538 13.25 29.538 29.538c0 16.29-13.249 29.538-29.538 29.538"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <h2
+                                        class="text-uppercase display-1 pb-1 d-md-none"
+                                    >
+                                        Ready to create in a space built for
+                                        high-performance sound?
+                                    </h2>
+                                    <h2
+                                        class="text-uppercase display-5 pb-1 d-none d-md-block"
+                                    >
+                                        Ready to create in a space built for
+                                        high-performance sound?
+                                    </h2>
+
+                                    <p class="">
+                                        Reach out for bookings, rates, and
+                                        studio tours.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="position-relative col-12 col-lg-6 px-lg-3"
+                            >
+                                <!-- contact form -->
+                                <form
+                                    class="h-100 text-dark bg-secondary-subtle py-3 px-3"
+                                >
+                                    <div class="form-group mb-3">
+                                        <label
+                                            for="nameInput"
+                                            class="form-label"
+                                            >Name and company</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control bg-transparent border-dark"
+                                            id="nameInput"
+                                        />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label
+                                            for="emailInput"
+                                            class="form-label"
+                                            >Work email</label
+                                        >
+                                        <input
+                                            type="email"
+                                            class="form-control bg-transparent border-dark"
+                                            id="emailInput"
+                                        />
+                                    </div>
+                                    <fieldset class="form-group mb-3">
+                                        <legend
+                                            class="fw-normal fs-6 form-label"
+                                        >
+                                            What are you most interested in?
+                                        </legend>
+
+                                        <div class="form-check ps-0 py-1">
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="interestRadio"
+                                                id="booking"
+                                                autocomplete="off"
+                                            />
+                                            <label
+                                                class="btn btn-outline-dark"
+                                                for="booking"
+                                            >
+                                                Booking a space</label
+                                            >
+                                        </div>
+
+                                        <div class="form-check ps-0 py-1">
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="interestRadio"
+                                                id="pricing"
+                                                autocomplete="off"
+                                            />
+                                            <label
+                                                class="btn btn-outline-dark"
+                                                for="pricing"
+                                            >
+                                                Pricing and packages
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check ps-0 py-1">
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="interestRadio"
+                                                id="studio"
+                                                autocomplete="off"
+                                            />
+                                            <label
+                                                class="btn btn-outline-dark"
+                                                for="studio"
+                                            >
+                                                A virtual studio tour
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                    <!-- 3mlah type button to disable bs akid howa el mafroud yeb2a submit -->
+                                    <button
+                                        type="button"
+                                        class="w-100 btn btn-dark rounded-5 mb-3"
+                                    >
+                                        Submit
+                                    </button>
+                                    <div class="text-center small px-4">
+                                        <p class="text-secondary mb-0">
+                                            Your name and email will be shared.
+                                            Never submit passwords.
+                                        </p>
+                                        <a class="link-secondary"
+                                            >Learn how we handle our data</a
+                                        >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- ------------------- FOOTER ------------------- -->
+            <footer class="bg-dark text-light w-100">
+                <div class="d-flex flex-wrap justify-content-around py-4">
+                    <span class="text-uppercase px-3 py-1"
+                        >hello@reallygreatsite.com</span
+                    >
+                    <span class="text-uppercase px-3 py-1">123-456-7890</span>
+                    <span class="text-uppercase px-3 py-1"
+                        >@reallygreatsite.com</span
+                    >
+                </div>
+            </footer>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
