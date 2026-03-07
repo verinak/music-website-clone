@@ -1,0 +1,23 @@
+:root {
+    --lavender-accent: #d0ccff;
+}
+
+.text-lavender {
+    color: var(--lavender-accent);
+}
+
+.bg-lavender {
+    background-color: var(--lavender-accent);
+}
+
+.btn.btn-custom {
+    background-color: #6261613d;
+    border: none;
+}
+
+/* apply default bootstrap style on checked */
+.btn-check:not(:checked) + .btn.btn-custom:hover {
+    background-color: #28282850;
+}
+
+/* todo : font sizes , spaces ,  */
