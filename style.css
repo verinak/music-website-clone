@@ -149,6 +149,14 @@ body {
     font-size: 0.7rem;
 }
 
+.button-padding {
+    padding: 0.8rem 2.8rem;
+}
+
+.input-padding {
+    padding: 0.4rem 0.6rem;
+}
+
 /* prevent footer text overflow on extra small screens */
 @media screen and (max-width: 576px) {
     footer {
@@ -156,4 +164,4 @@ body {
     }
 }
 
-/* todo : font sizes , spaces (padding margin) , buttons (anchor tags?) , form is a mess actually*/
+/* todo : buttons (anchor tags?) , form is a mess actually*/
