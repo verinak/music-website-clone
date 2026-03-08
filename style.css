@@ -163,11 +163,31 @@ body {
     scroll-margin-top: 5.5rem;
 }
 
+/* change box shadow in default focus and for valid input */
+.form-control:focus,
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+    box-shadow: 0 0 0 0.25rem rgba(171, 157, 230, 0.6);
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+    /* el sa7 el a5dar da mdaye2ni */
+    background-image: none;
+}
+
+/* remove browser autofill background */
+/* katar 5er gemini bsara7a */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
 /* prevent footer text overflow on extra small screens */
 @media screen and (max-width: 576px) {
     footer {
         font-size: 0.8rem;
     }
 }
-
-/* todo : buttons (anchor tags?) , form is a mess actually*/
