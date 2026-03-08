@@ -157,6 +157,12 @@ body {
     padding: 0.4rem 0.6rem;
 }
 
+/* fix for sticky header hiding content */
+/* for any target element */
+:target {
+    scroll-margin-top: 5.5rem;
+}
+
 /* prevent footer text overflow on extra small screens */
 @media screen and (max-width: 576px) {
     footer {
