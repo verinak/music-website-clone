@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Flux Sound Studio</title>
 
+        <meta
+            name="description"
+            content="A responsive, mobile-first landing page for a (hypothetical) music studio, built while learning Bootstrap."
+        />
+
         <!-- load font : montserrat -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,6 +46,7 @@
                             viewBox="0 0 512 512"
                             fill="currentColor"
                             xml:space="preserve"
+                            aria-label="Flux sound studio logo"
                         >
                             <path
                                 d="M256 0C114.836 0 0 114.841 0 256s114.836 256 256 256 256-114.841 256-256S397.163 0 256 0m0 492.308c-130.298 0-236.308-106.01-236.308-236.308S125.702 19.692 256 19.692 492.308 125.702 492.308 256 386.298 492.308 256 492.308"
@@ -71,7 +77,7 @@
                 <section
                     class="w-100 bg-dark text-light position-relative overflow-hidden"
                 >
-                    <!-- background image -->
+                    <!-- background video -->
                     <img
                         class="video-thumbnail w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
                         src="./assets/music-production-studio-thumbnail-768.webp"
@@ -82,6 +88,7 @@
                         "
                         sizes="100vw"
                         fetchpriority="high"
+                        aria-hidden="true"
                     />
                     <video
                         id="heroVideo"
@@ -90,6 +97,7 @@
                         loop
                         playsinline
                         class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle invisible"
+                        aria-label="A close-up of a person's hands playing a backlit MIDI keyboard, surrounded by production equipment."
                     >
                         <source
                             src="./assets/music-production-studio.webm"
@@ -147,17 +155,14 @@
                             ./assets/recording-studio-768.webp   768w,
                             ./assets/recording-studio-1200.webp 1200w
                         "
+                        alt="A professional recording studio desk with a large mixing console, dual monitors, rack gear, and five electric guitars hanging on the wall."
                     />
                 </section>
 
                 <!-- SECTION 3 - PREMIUM SPACES -->
                 <section class="w-100 bg-dark text-light px-3 py-5 p-lg-5">
                     <div class="row position-relative overflow-hidden">
-                        <!-- background image -->
-                        <!-- <img
-                            class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
-                            src="./assets/pexels-anna-pou-8132523_compressed.jpg"
-                        /> -->
+                        <!-- background video -->
                         <img
                             class="video-thumbnail w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
                             src="./assets/girl-wearing-headphones-thumbnail-768.webp"
@@ -167,6 +172,7 @@
                                 ./assets/girl-wearing-headphones-thumbnail-1200.webp 1200w
                             "
                             sizes="100vw"
+                            aria-hidden="true"
                         />
                         <video
                             preload="none"
@@ -175,6 +181,7 @@
                             loop
                             playsinline
                             class="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle invisible"
+                            aria-label="A woman with curly hair putting on white over-ear headphones and listening to music."
                         >
                             <source
                                 src="./assets/girl-wearing-headphones.mp4"
@@ -233,6 +240,7 @@
                                     ./assets/electric-guitar-closeup-768.webp   768w,
                                     ./assets/electric-guitar-closeup-1200.webp 1200w
                                 "
+                                alt="A close-up of a musician's hands playing an electric guitar with a black pickguard under vibrant purple stage lighting."
                             />
                             <div
                                 class="flex-grow-1 d-flex flex-column justify-content-between"
@@ -256,6 +264,7 @@
                                     ./assets/studio-equipment-closeup-768.webp  768w,
                                     ./assets/studio-equipment-closeup.webp     1080w
                                 "
+                                alt="A close-up of a desktop synthesizer with knobs, switches, and patch cables, set against a background with a studio monitor speaker in purple lighting."
                             />
                             <div
                                 class="flex-grow-1 d-flex flex-column justify-content-between"
@@ -288,6 +297,7 @@
                             ./assets/condenser-mic-setup-768.webp  768w,
                             ./assets/condenser-mic-setup.webp     1080w
                         "
+                        alt="A close-up of a black condenser microphone, with a studio monitor speaker and mixing console in the background."
                     />
                     <!-- overlay content -->
                     <div class="p-2 py-4 w-100 position-relative">
@@ -306,6 +316,7 @@
                                             viewBox="0 0 512 512"
                                             fill="currentColor"
                                             xml:space="preserve"
+                                            aria-label="Flux sound studio logo"
                                         >
                                             <path
                                                 d="M256 0C114.836 0 0 114.841 0 256s114.836 256 256 256 256-114.841 256-256S397.163 0 256 0m0 492.308c-130.298 0-236.308-106.01-236.308-236.308S125.702 19.692 256 19.692 492.308 125.702 492.308 256 386.298 492.308 256 492.308"
